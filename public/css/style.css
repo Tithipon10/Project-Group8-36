@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mitr', sans-serif;
+}
+.main{
+    width: auto;
+    height: 100vh;
+    background-color: #66ccff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.no-highlight{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.imageBG img{
+    width: 150px;
+    animation: imageBG 7.5s linear infinite;
+    /*animation-delay: calc(-1s * var(--i));*/
+}
+.imageBG{
+    pointer-events: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    /* bottom: 0px; */
+}
+.imageBG1{
+    top: 100%;
+}
+.imageBG2{
+    bottom: 100%;
+    transform:scale(0.8) rotateX(180deg);
+    filter: blur(6px);
+}
+
+@keyframes imageBG{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20%{
+ 
+        opacity: 1;
+    }
+    30%{
+
+        opacity: 1;
+    }
+    40%{
+
+        opacity: 1;
+    }
+    50%{
+
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-110vh) rotate(315deg);
+        opacity: 0;
+    }
+
+}
+
+.imageBG img:nth-child(1){
+    animation-delay: 2s;
+    width: 125px;
+    /*donut*/
+}
+.imageBG img:nth-child(2){
+    animation-delay: 0s;
+    animation-duration: 10s;
+    /*milk*/
+}
+.imageBG img:nth-child(3){
+    animation-delay: 3.75s;
+    width: 125px;
+    /*chocolate*/
+}
+.imageBG img:nth-child(4){
+    animation-delay: 5s;
+    animation-duration: 9s;
+    /*taco*/
+}
+.imageBG img:nth-child(5){
+    animation-delay: 2.75s;
+    animation-duration: 11s;
+    /*snack*/
+}
+.imageBG img:nth-child(6){
+    animation-delay: 6s;
+    animation-duration: 9.25s;
+    width: 110px;
+    /*sandwich*/
+}
+.imageBG img:nth-child(7){
+    animation-delay: 8.5s;
+    width: 130px;
+    /*french-fries*/
+}
+
+@media (max-width: 600px) {
+    .imageBG img:nth-child(1){
+        width: 60px;
+        /*donut*/
+    }
+    .imageBG img:nth-child(2){
+        width: 60px;
+        animation-duration: 9.5s;
+        /*milk*/
+    }
+    .imageBG img:nth-child(3){
+        width: 60px;
+        /*chocolate*/
+    }
+    .imageBG img:nth-child(4){
+        width: 60px;
+        animation-duration: 8.5s;
+        /*taco*/
+    }
+    .imageBG img:nth-child(5){
+        width: 60px;
+        animation-duration: 8s;
+        /*snack*/
+    }
+    .imageBG img:nth-child(6){
+        width: 60px;
+        /*sandwich*/
+    }
+    .imageBG img:nth-child(7){
+        width: 60px;
+        animation-duration: 9s;
+        /*french-fries*/
+    }
+
+}
+
+/* width */
+#scrollbar ::-webkit-scrollbar {
+    width: 18px;
+}
+/* Track */
+#scrollbar ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow:inset 0 0 100px #c4c4c4;
+}
+ 
+/* Handle */
+#scrollbar ::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background-color: #090909;
+    border: 4px solid #c4c4c4;
+}
+
+/* Handle on hover */
+#scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #037DA4;
+}
+
+
+
+
+footer .BG007{
+    font-family: 'Mitr', sans-serif;
+    background: #037DA4;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+footer .BG007 .image1 img{
+    width: 125px;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 20px;
+    display: flex;
+}
+
+footer .BG007 .image2 img{
+    width: 125px;
+    height: auto;
+    padding-right: 0px;
+    padding-top: 20px;
+    display: flex;
+}
+
+footer .BG007 .Store_name sh1{
+    font-family: 'Mitr', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    -webkit-text-fill-color: #fff; -webkit-text-stroke:2px black;
+}
+
+.BG007 .center {
+    padding-top: 50px;
+    display: flex;
+} 
+
+.BG007 .padmap{
+    padding: 10px 20px ;
+    text-align: center;
+}
+
+.map{
+    background-color: rgb(4, 110, 143);
+    border-radius: 10px;
+    border: 1px solid rgb(4, 110, 143);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+
+}
+
+footer .BG007 .map mp{
+    font-size: 15px;
+    color: white;
+}
+
+footer .BG007 .name .contact cp{
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+}
+
+.name{
+    font-size: 15px;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer .BG007 .contact{
+    background-color: rgb(4, 110, 143);
+    border-radius: 10px;
+    border: 1px solid rgb(4, 110, 143);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+}
+
+/* responsive */

@@ -1,0 +1,437 @@
+:root {
+    --green: #27ae60;
+    --black: #2c2c54;
+    --blue: #ACE2E4;
+}
+
+
+
+
+
+section {
+    padding: 2.5rem 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--green);
+    color: #fff;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: default;
+}
+
+.btn:hover {
+    background: var(--blue);
+}
+
+.product .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product .box-container .box {
+    flex: 1 1 20rem;
+    text-align: center;
+    padding: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.product .box-container .box img {
+    height: 10rem;
+    width: 18vmin;
+}
+
+.product .box-container .box .discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(0, 255, 0, .1);
+    border-radius: .5rem;
+    color: var(--green);
+    padding: .7rem 1rem;
+    font-size: 2rem;
+}
+
+.product .box-container .box .icons {
+    position: absolute;
+    top: .5rem;
+    right: -6rem;
+}
+
+.product .box-container .box:hover .icons {
+    right: 1rem;
+}
+
+.product .box-container .box .icons a {
+    display: block;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    background: rgba(0, 0, 0, .05);
+    border-radius: 50%;
+    margin-top: .7rem;
+}
+
+.product .box-container .box .icons a:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.product .box-container .box h3 {
+    color: var(--black);
+    font-size: 3vmin;
+}
+
+.product .box-container .box .stars i {
+    padding: 1rem .1rem;
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.product .box-container .box .price {
+    font-size: 3.5vmin;
+    color: #333;
+    padding: .5rem 0;
+}
+
+.product .box-container .box .price span {
+    font-size: 1.5rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.product .box-container .box .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.product .box-container .box .quantity span {
+    padding: 0 .7rem;
+    font-size: 1.7rem;
+}
+
+.product .box-container .box .quantity input {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    padding: .5rem;
+    background: rgba(0, 0, 0, .05);
+}
+
+.product .box-container .box .btn {
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    section {
+        padding: 3vmin;
+    }
+}
+
+.mainmap {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.ggmap {
+    position: relative;
+}
+
+.ggmap iframe {
+    background-color: rgb(102, 206, 238);
+    border-radius: 10px;
+    border: 1px solid rgb(102, 206, 238);
+    padding: 10px 10px 10px 10px;
+    width: 80vmin;
+    height: 59vmin;
+}
+
+.textmap {
+    font-size: 2vmin;
+    margin-left: 8vmin;
+    margin-top: 10vmin;
+}
+
+.textmap h1 {
+    text-align: center;
+
+}
+
+.textmap h2 {
+    text-align: center;
+}
+
+.category-in {
+    margin-left: 2vmin;
+    margin-top: -2vmin;
+    width: 36vmin;
+    height: 25vmin;
+    background: #D9EDEE;
+    border-radius: 22px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border: 1px solid #000000;
+    position: absolute;
+    overflow: auto;
+}
+
+.text-name-user {
+    font-size: 3vmin;
+    margin-top: -0.3rem;
+    text-align: center;
+}
+
+.profile-admin-show-stutus {
+    margin-top: -1px;
+    margin-right: 25px;
+}
+
+.profile-admin-pic-web {
+    background-color: #8f5c63;
+    align-items: center;
+    border-radius: 10% !important;
+}
+
+@media (max-width: 600px) {
+    .bg-center {
+        margin-top: 18vmin;
+        margin-left: 4vmin;
+        height: 145vmin;
+        width: 92%;
+    }
+
+    .discount {
+        font-size: 6vmin ! important;
+    }
+
+    .product .box-container .box img {
+        margin-top: -5vmin;
+        margin-left: -1vmin;
+        width: 12rem ! important;
+        height: 10rem;
+    }
+
+    .product .box-container .box h3 {
+        font-size: 6vmin;
+    }
+
+    .product .box-container .box .stars i {
+        font-size: 1rem;
+        margin-top: -4vmin;
+    }
+
+    .product .box-container .box .price {
+        font-size: 6vmin;
+        margin-top: -3vmin;
+    }
+
+    .product .box-container {
+        flex-direction: column;
+    }
+
+    .category p {
+        font-size: 3vmin;
+        text-align: left;
+        margin-left: 5vmin;
+        margin-top: -3vmin;
+    }
+
+    .category {
+        margin-left: 1vmin;
+        margin-top: -35vmin;
+        width: 38vmin;
+        height: 36vmin;
+    }
+
+    .category-in-phone {
+        padding: 2vmin;
+        margin-left: 1vmin;
+        margin-top: -4vmin;
+        width: 36vmin;
+        height: 27vmin;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 1px solid #ffffff00;
+    }
+
+    .text-border {
+        padding: 1vmin 4vmin 1vmin 4vmin;
+        margin-top: 1vmin;
+        margin-right: -20vmin;
+        float: right;
+        text-align: center;
+    }
+
+    .split1 {
+        padding: 1vmin 8.5vmin 1vmin 8.5vmin;
+        margin-top: 19vmin;
+        margin-right: -90vmin;
+    }
+
+    .split2 {
+        padding: 1vmin 5.2vmin 1vmin 5.2vmin;
+        margin-top: 26vmin;
+        margin-right: -90vmin;
+    }
+
+    .split3 {
+        margin-top: 33vmin;
+        margin-right: -90vmin;
+    }
+
+    .split4 {
+        padding: 1vmin 9vmin 1vmin 9vmin;
+        margin-top: 40vmin;
+        margin-right: -90vmin;
+    }
+
+    form input {
+        width: 37vmin;
+        height: 7vmin;
+        margin-left: 1.5vmin;
+        margin-top: 6vmin;
+        position: absolute;
+    }
+
+    form input#search {
+        margin-top: 6vmin;
+        margin-left: 40vmin;
+        width: 7vmin;
+        height: auto;
+        position: absolute;
+    }
+
+    #border-log {
+        font-size: 3vmin;
+    }
+
+    #border-register {
+        font-size: 3vmin;
+    }
+
+    .logo img {
+        width: 35vmin;
+        height: auto;
+    }
+
+    .logo-circle {
+        margin-top: 22vmin;
+        margin-left: 37.5vmin;
+        position: absolute;
+    }
+
+    .logo-text {
+        margin-top: 15vmin;
+        margin-left: 60vmin;
+        position: absolute;
+    }
+
+    .textprofile {
+        font-size: 2.5vmin;
+        margin-top: 1vmin;
+    }
+
+
+
+    .text-type {
+        margin-right: -2vmin;
+        margin-top: -2vmin;
+    }
+
+    .point {
+        height: 3vmin;
+        width: 3vmin;
+        border: 0.25vmin solid rgb(0 0 0);
+        margin-top: -1.6vmin;
+        margin-left: 1vmin;
+    }
+
+    .product .box-container .box .icons a {
+        height: 3rem;
+        width: 3rem;
+        font-size: 1rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .textmap {
+        margin-left: -70vmin;
+        margin-top: 70vmin;
+        width: 200px;
+    }
+
+    .mainmap div {
+        width: 290px;
+        padding: 10px 0 10px 0;
+    }
+
+    .profile {
+        position: absolute;
+        width: 92vmin;
+        height: 11vmin;
+        margin-left: -4vmin;
+        margin-top: 56.6vmin;
+    }
+
+    .onlne-name-user-admin {
+        margin-right: 2vmin;
+        margin-top: 1.4vmin;
+        height: 8vmin;
+        width: 8vmin;
+    }
+
+    .text-name-user {
+        font-size: 7vmin;
+        margin-top: 0.1vmin;
+    }
+
+    .text-profile-user-admin {
+        display: none;
+    }
+
+    .user_image {
+        margin-top: 0.2rem;
+        margin-left: 0.5rem;
+        width: 9vmin;
+    }
+
+    .profile-admin-show-stutus01 {
+        margin-top: 2vmin;
+    }
+
+    .profile-admin-pic-web {
+        margin-top: 1.25vmin;
+        margin-left: 3.5vmin;
+    }
+
+    .ggmap iframe {
+        margin-left: 1vmin;
+    }
+    .team-contact {
+        width: 85vmin;
+        gap: 0vmin;
+    }
+    .box-profile-team {
+        gap: 0vmin !important;
+    }
+    .top{
+        display: flex;
+    }
+}
